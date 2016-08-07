@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Jaipur Safari</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="category_Historicalplaces">Historical places</string>
+
+    <!-- [CHAR LIMIT=20] -->
+    <string name="category_pointsofinterest">Poits of interest</string>
+
+    <!--  [CHAR LIMIT=20] -->
+    <string name="category_modernera">Modern Era</string>
+
+    <!-- [CHAR LIMIT=20] -->
+    <string name="category_sanskrati">Sanskrati</string>
+</resources>
