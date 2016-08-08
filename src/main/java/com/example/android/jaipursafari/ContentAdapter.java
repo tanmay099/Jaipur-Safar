@@ -46,7 +46,7 @@ public class ContentAdapter extends ArrayAdapter<Content> {
 
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.ic_launcher);
 
-        imageView.setImageResource(currentContent.getmImageResourseId());
+        imageView.setImageResource(currentContent.getmImageResourceId());
 
 
         View textContainer = listItemView.findViewById(R.id.text_container);

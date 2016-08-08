@@ -36,9 +36,9 @@ public class SectionAdapter extends FragmentPagerAdapter {
         } else if (position == 1) {
             return new PointsOfIntrest();
         } else if (position == 2) {
-            return new Sanskrati();
-        } else {
             return new MordernEra();
+        } else {
+            return new Sanskrati();
         }
     }
 

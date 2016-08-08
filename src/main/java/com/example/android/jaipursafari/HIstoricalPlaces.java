@@ -1,5 +1,7 @@
 package com.example.android.jaipursafari;
 
+import android.content.ClipData;
+import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -22,9 +24,11 @@ public class HIstoricalPlaces extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.content_list, container, false);
+        ArrayList<Locations> locations = new ArrayList<Locations>();
+
 
         ArrayList<Content> contents= new ArrayList<Content>();
-        contents.add(new Content("Amer Fort","16th century hiltop fort& palace" ,R.drawable.ameraofrtmaotalake ));
+        contents.add(new Content("Amer Fort","16th century hiltop fort& palace" ,R.drawable.ameraofrtmaotalake));
         contents.add(new Content("Hawa Mahal","fairy-tale, pink sandstone", R.drawable.hawamahel));
         contents.add(new Content("City Palace", "includes the Chandra Mahal and Mubarak Mahal palaces",R.drawable.cityplace));
         contents.add(new Content("Jantar Mantar","astronomical observation site",R.drawable.jantermanter));
@@ -38,11 +42,18 @@ public class HIstoricalPlaces extends Fragment {
         contents.add(new Content("Raj Mandir Cinema","cinema hall that will cross the boundary of traditional cinema",R.drawable.rajmandircinema));
         contents.add(new Content("Sawai Mansingh Stadium","Criket Ground",R.drawable.sms));
         contents.add(new Content("Jaipur Zoo","animal kingdom",R.drawable.jaipurzoo));
+        locations.add(new Locations("tonk road", "jaipur"));
+
         ContentAdapter adapter = new ContentAdapter(getActivity(),contents,R.color.section_historical);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
+
         listView.setAdapter(adapter);
+
+
+
+
 
         return rootView;
 }}
